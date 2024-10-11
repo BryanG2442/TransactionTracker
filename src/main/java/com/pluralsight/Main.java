@@ -12,13 +12,13 @@ public class Main {
 
     }
 
-
+    //The default screen the program goes through.
     public static void homeScreen() {
         Scanner scanner = new Scanner(System.in);
 
         String choice;
         do {
-            System.out.println("Please choose an option:\n" +
+            System.out.println("\nPlease choose an option:\n" +
                     "To make a deposit, input D\n" +
                     "To make a payment, input P\n" +
                     "To view your ledger, input L\n" +
@@ -30,7 +30,7 @@ public class Main {
                 case "L": break;
                 case "X": break;
                 default:
-                    System.out.println("Invalid input. Please try a valid option");
+                    System.out.println("\nInvalid input. Please try a valid option");
         }} while (!(choice.equalsIgnoreCase("X")));
 
 
