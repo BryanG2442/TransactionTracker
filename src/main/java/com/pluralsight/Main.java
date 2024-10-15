@@ -65,6 +65,7 @@ public class Main {
 
     }
 
+
     public static void makePayment(Scanner scanner) {
         System.out.print("Please input the purchased item: ");
         String source = scanner.nextLine();
