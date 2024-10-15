@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5930d6c9-9efd-46d5-808e-e4a52480f202" name="Changes" comment="Can display the full ledger">
+    <list default="true" id="5930d6c9-9efd-46d5-808e-e4a52480f202" name="Changes" comment="Can now display payments or deposits">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Transactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Transactions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +89,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729022137696</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Can now display payments or deposits">
+      <option name="closed" value="true" />
+      <created>1729023494511</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729023494511</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Can now display payments or deposits">
+      <option name="closed" value="true" />
+      <created>1729023513014</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729023513014</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -98,6 +113,7 @@
     <MESSAGE value="Minor edit" />
     <MESSAGE value="Can add deposit entries" />
     <MESSAGE value="Can display the full ledger" />
-    <option name="LAST_COMMIT_MESSAGE" value="Can display the full ledger" />
+    <MESSAGE value="Can now display payments or deposits" />
+    <option name="LAST_COMMIT_MESSAGE" value="Can now display payments or deposits" />
   </component>
 </project>
