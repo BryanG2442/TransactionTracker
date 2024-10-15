@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5930d6c9-9efd-46d5-808e-e4a52480f202" name="Changes" comment="Can add deposit entries">
+    <list default="true" id="5930d6c9-9efd-46d5-808e-e4a52480f202" name="Changes" comment="Can display the full ledger">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Transactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Transactions.java" afterDir="false" />
@@ -29,6 +29,9 @@
     &quot;accountId&quot;: &quot;2634b9a1-485d-4625-b117-00b1e8818313&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
@@ -79,13 +82,22 @@
       <option name="project" value="LOCAL" />
       <updated>1729013145181</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Can display the full ledger">
+      <option name="closed" value="true" />
+      <created>1729022137696</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729022137696</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Home Screen" />
     <MESSAGE value="Minor edit" />
     <MESSAGE value="Can add deposit entries" />
-    <option name="LAST_COMMIT_MESSAGE" value="Can add deposit entries" />
+    <MESSAGE value="Can display the full ledger" />
+    <option name="LAST_COMMIT_MESSAGE" value="Can display the full ledger" />
   </component>
 </project>

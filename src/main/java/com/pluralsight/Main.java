@@ -78,13 +78,14 @@ public class Main {
         scanner.nextLine();
 
     }
-
+    //Ledger menu
     public static void ledgerMenu(Scanner scanner) {
         String choice;
         do {
             System.out.println("Welcome to the Ledger menu. Please choose an option." +
                     "\nTo view all entries, please enter A" +
                     "\nTo view all deposit, please enter D" +
+                    "\nTo view all payments, please enter P" +
                     "\nTo run reports, please enter R" +
                     "\nTo go back to the home screen, please enter H");
             choice = scanner.nextLine();
@@ -95,7 +96,11 @@ public class Main {
                     break;
                 case "D":
                 case "d":
+                    showDeposits(getTransactions());
                     break;
+                case "P":
+                case "p":
+                    showPayments(getTransactions());
                 case "R":
                 case "r":
                     break;
@@ -135,7 +140,26 @@ public class Main {
         for (int i = transactionList.size(); i > 0; i--) {
             transactionList.get(i-1).printInfo();
         }
+        System.out.println();
     }
+
+    public static void showDeposits (ArrayList<Transactions> transactionList) {
+        for (int i = transactionList.size(); i > 0; i--) {
+            if (transactionList.get(i-1).getAmount() > 0) {
+                transactionList.get(i - 1).printInfo();
+            }
+        }
+        System.out.println();
+    }
+
+    public static void showPayments (ArrayList<Transactions> transactionList) {
+        for (int i = transactionList.size(); i > 0; i--) {
+            if (transactionList.get(i-1).getAmount() < 0) {
+                transactionList.get(i - 1).printInfo();
+            }        }
+        System.out.println();
+    }
+
 
 
 

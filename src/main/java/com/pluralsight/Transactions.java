@@ -40,6 +40,7 @@ public class Transactions {
         System.out.printf("%S|%S|%S|%S|%.2f\n", createdDate, createdTime, description, vendor, amount);
     }
 
-
-
+    public double getAmount() {
+        return amount;
+    }
 }
