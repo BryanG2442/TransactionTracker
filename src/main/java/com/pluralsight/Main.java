@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -137,6 +138,7 @@ public class Main {
                 case "1":
                     showCurrentMonthTransactions(transactions);
                 case "2":
+                    showPreviousMonthTransactions(transactions);
                 case "3":
                 case "4":
                 case "5":
@@ -153,11 +155,30 @@ public class Main {
     public static void  showCurrentMonthTransactions (ArrayList<Transactions> transactionsArrayList){
 
         for (int i = transactionsArrayList.size(); i > 0; i--) {
-            if (LocalDate.now().getMonth() == LocalDate.parse(transactionsArrayList.get(0).getDate(), DateTimeFormatter.ofPattern("yyyy-MM-dd")).getMonth())
+
+            if (LocalDate.now().getMonth() == LocalDate.parse(transactionsArrayList.get(i-1).getCreatedDate(), DateTimeFormatter.ofPattern("yyyy-MM-dd")).getMonth()){
                     transactionsArrayList.get(i-1).printInfo();
+
+            }
         }
         System.out.println();
     }
+
+    public static void  showPreviousMonthTransactions (ArrayList<Transactions> transactionsArrayList){
+
+        for (int i = transactionsArrayList.size(); i > 0; i--) {
+            if (LocalDate.now().minusMonths(1).getMonth() == LocalDate.parse(transactionsArrayList.get(i-1).getCreatedDate(), DateTimeFormatter.ofPattern("yyyy-MM-dd")).getMonth()){
+                transactionsArrayList.get(i-1).printInfo();
+            }
+        }
+        System.out.println();
+    }
+
+
+
+
+
+
 
     //Gets the current list of transactions and puts it into an array
     public static ArrayList<Transactions> getTransactions(){

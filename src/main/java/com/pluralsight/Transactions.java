@@ -43,4 +43,8 @@ public class Transactions {
     public double getAmount() {
         return amount;
     }
+
+    public String getCreatedDate() {
+        return createdDate;
+    }
 }
