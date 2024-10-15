@@ -85,7 +85,7 @@ public class Main {
     }
     //Ledger menu
     public static void ledgerMenu(Scanner scanner) {
-        ArrayList<Transactions> transactionsArrayList = new ArrayList<Transactions>(getTransactions());
+        ArrayList<Transactions> transactionsArrayList = new ArrayList<>(getTransactions());
         String choice;
         do {
             System.out.println("Welcome to the Ledger menu. Please choose an option." +
@@ -107,6 +107,7 @@ public class Main {
                 case "P":
                 case "p":
                     showPayments(transactionsArrayList);
+                    break;
                 case "R":
                 case "r":
                     reportsMenu(scanner, transactionsArrayList);
@@ -137,11 +138,19 @@ public class Main {
             switch (choice){
                 case "1":
                     showCurrentMonthTransactions(transactions);
+                    break;
                 case "2":
                     showPreviousMonthTransactions(transactions);
+                    break;
                 case "3":
+                    showCurrentYearTransactions(transactions);
+                    break;
                 case "4":
+                    showPreviousYearTransactions(transactions);
+                    break;
                 case "5":
+                    searchVendor(scanner, transactions);
+                    break;
                 case "0":
                     break;
                 default:
@@ -152,6 +161,8 @@ public class Main {
 
     }
 
+
+    //Gets the current month and the month of a given transaction and displays it if they match
     public static void  showCurrentMonthTransactions (ArrayList<Transactions> transactionsArrayList){
 
         for (int i = transactionsArrayList.size(); i > 0; i--) {
@@ -163,7 +174,7 @@ public class Main {
         }
         System.out.println();
     }
-
+    //Gets the previous month and the month of a given transaction and displays it if they match
     public static void  showPreviousMonthTransactions (ArrayList<Transactions> transactionsArrayList){
 
         for (int i = transactionsArrayList.size(); i > 0; i--) {
@@ -174,10 +185,44 @@ public class Main {
         System.out.println();
     }
 
+    //Gets the current year and the year of a given transaction and displays it if they match
+    public static void  showCurrentYearTransactions (ArrayList<Transactions> transactionsArrayList){
+
+        for (int i = transactionsArrayList.size(); i > 0; i--) {
+
+            if (LocalDate.now().getYear() == LocalDate.parse(transactionsArrayList.get(i-1).getCreatedDate(), DateTimeFormatter.ofPattern("yyyy-MM-dd")).getYear()){
+                transactionsArrayList.get(i-1).printInfo();
+
+            }
+        }
+        System.out.println();
+    }
+    //Gets the previous year and the year of a given transaction and displays it if they match
+    public static void  showPreviousYearTransactions (ArrayList<Transactions> transactionsArrayList){
+
+        for (int i = transactionsArrayList.size(); i > 0; i--) {
+
+            if (LocalDate.now().minusYears(1).getYear() == LocalDate.parse(transactionsArrayList.get(i-1).getCreatedDate(), DateTimeFormatter.ofPattern("yyyy-MM-dd")).getYear()){
+                transactionsArrayList.get(i-1).printInfo();
+
+            }
+        }
+        System.out.println();
+    }
 
 
-
-
+    public static void searchVendor (Scanner scanner, ArrayList<Transactions> transactionsArrayList) {
+        System.out.print("Please input the vendor you wish to search for: ");
+        String searchTerm = scanner.nextLine();
+        searchTerm = searchTerm.toUpperCase();
+        for (int i = transactionsArrayList.size(); i > 0; i--){
+            if (transactionsArrayList.get(i-1).getAmount() < 0){
+                if (transactionsArrayList.get(i-1).getVendor().contains(searchTerm)){
+                    transactionsArrayList.get(i-1).printInfo();
+                }
+            }
+        }
+    }
 
 
     //Gets the current list of transactions and puts it into an array

@@ -47,4 +47,8 @@ public class Transactions {
     public String getCreatedDate() {
         return createdDate;
     }
+
+    public String getVendor() {
+        return vendor;
+    }
 }
