@@ -69,6 +69,7 @@ public class Main {
         scanner.nextLine();
 
     }
+    //Validates double being input
     public static double getDouble(Scanner scanner){
         double outputDouble = 0;
         do { try {
