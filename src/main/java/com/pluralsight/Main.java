@@ -73,7 +73,9 @@ public class Main {
             outputDouble = scanner.nextDouble();
         } catch (InputMismatchException e) {
             System.out.println("Please input a valid value");
-        } } while (outputDouble == 0);
+            scanner.nextLine();}
+
+        } while (outputDouble == 0);
         return outputDouble;
     }
 
