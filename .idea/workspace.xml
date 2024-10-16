@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5930d6c9-9efd-46d5-808e-e4a52480f202" name="Changes" comment="Fixed issue with showing the month's transactions, can now show previous month's transactions as well.">
+    <list default="true" id="5930d6c9-9efd-46d5-808e-e4a52480f202" name="Changes" comment="Added ability to look at current/previous year entries, as well as the ability to search for vendors.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Transactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Transactions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729031748322</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added ability to look at current/previous year entries, as well as the ability to search for vendors.">
+      <option name="closed" value="true" />
+      <created>1729033298125</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1729033298125</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -133,6 +140,7 @@
     <MESSAGE value="Can now display payments or deposits" />
     <MESSAGE value="Added reports menu, can now show current months transactions" />
     <MESSAGE value="Fixed issue with showing the month's transactions, can now show previous month's transactions as well." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed issue with showing the month's transactions, can now show previous month's transactions as well." />
+    <MESSAGE value="Added ability to look at current/previous year entries, as well as the ability to search for vendors." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ability to look at current/previous year entries, as well as the ability to search for vendors." />
   </component>
 </project>

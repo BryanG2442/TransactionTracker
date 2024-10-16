@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -61,14 +62,22 @@ public class Main {
         System.out.print("Please input the buyer: ");
         String buyer = scanner.nextLine();
         System.out.print("Please input the deposit amount: ");
-        double price = scanner.nextDouble();
+        double price = Math.abs(getDouble(scanner));
         Transactions transactions = new Transactions();
         String toFile = String.format("%S|%S|%S|%S|%.2f\n",transactions.getDate(), transactions.getTime(), source, buyer, price);
         writeToFile(toFile);
         scanner.nextLine();
 
     }
-
+    public static double getDouble(Scanner scanner){
+        double outputDouble = 0;
+        do { try {
+            outputDouble = scanner.nextDouble();
+        } catch (InputMismatchException e) {
+            System.out.println("Please input a valid value");
+        } } while (outputDouble == 0);
+        return outputDouble;
+    }
 
     public static void makePayment(Scanner scanner) {
         System.out.print("Please input the purchased item: ");
@@ -76,7 +85,7 @@ public class Main {
         System.out.print("Please input the seller: ");
         String seller = scanner.nextLine();
         System.out.print("Please input the payment amount: ");
-        double price = -scanner.nextDouble();
+        double price = -Math.abs(getDouble(scanner));
         Transactions transactions = new Transactions();
         String toFile = String.format("%S|%S|%S|%S|%.2f\n",transactions.getDate(), transactions.getTime(), source, seller, price);
         writeToFile(toFile);
