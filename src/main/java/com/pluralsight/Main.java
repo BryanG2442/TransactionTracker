@@ -15,9 +15,6 @@ public class Main {
         System.out.println("Welcome to this transaction application.");
         homeScreen();
         System.out.println("Thank you for using our application.");
-
-
-
     }
 
     //The default screen the program goes through.

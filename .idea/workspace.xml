@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5930d6c9-9efd-46d5-808e-e4a52480f202" name="Changes" comment="Added ability to look at current/previous year entries, as well as the ability to search for vendors.">
+    <list default="true" id="5930d6c9-9efd-46d5-808e-e4a52480f202" name="Changes" comment="Validation for number input for payments/deposits">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +128,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729033298125</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Validation for number input for payments/deposits">
+      <option name="closed" value="true" />
+      <created>1729102616242</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1729102616242</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Validation for number input for payments/deposits">
+      <option name="closed" value="true" />
+      <created>1729102884649</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1729102884649</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -141,6 +156,7 @@
     <MESSAGE value="Added reports menu, can now show current months transactions" />
     <MESSAGE value="Fixed issue with showing the month's transactions, can now show previous month's transactions as well." />
     <MESSAGE value="Added ability to look at current/previous year entries, as well as the ability to search for vendors." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ability to look at current/previous year entries, as well as the ability to search for vendors." />
+    <MESSAGE value="Validation for number input for payments/deposits" />
+    <option name="LAST_COMMIT_MESSAGE" value="Validation for number input for payments/deposits" />
   </component>
 </project>
