@@ -176,7 +176,7 @@ public class Main {
 
         for (int i = transactionsArrayList.size(); i > 0; i--) {
 
-            if (LocalDate.now().getMonth() == LocalDate.parse(transactionsArrayList.get(i-1).getCreatedDate(), DateTimeFormatter.ofPattern("yyyy-MM-dd")).getMonth()){
+            if ((LocalDate.now().getYear() == LocalDate.parse(transactionsArrayList.get(i-1).getCreatedDate(), DateTimeFormatter.ofPattern("yyyy-MM-dd")).getYear()) && (LocalDate.now().getMonth() == LocalDate.parse(transactionsArrayList.get(i-1).getCreatedDate(), DateTimeFormatter.ofPattern("yyyy-MM-dd")).getMonth())){
                     transactionsArrayList.get(i-1).printInfo();
 
             }
@@ -187,7 +187,7 @@ public class Main {
     public static void  showPreviousMonthTransactions (ArrayList<Transactions> transactionsArrayList){
 
         for (int i = transactionsArrayList.size(); i > 0; i--) {
-            if (LocalDate.now().minusMonths(1).getMonth() == LocalDate.parse(transactionsArrayList.get(i-1).getCreatedDate(), DateTimeFormatter.ofPattern("yyyy-MM-dd")).getMonth()){
+            if ((LocalDate.now().getYear() == LocalDate.parse(transactionsArrayList.get(i-1).getCreatedDate(), DateTimeFormatter.ofPattern("yyyy-MM-dd")).getYear()) &&(LocalDate.now().minusMonths(1).getMonth() == LocalDate.parse(transactionsArrayList.get(i-1).getCreatedDate(), DateTimeFormatter.ofPattern("yyyy-MM-dd")).getMonth())){
                 transactionsArrayList.get(i-1).printInfo();
             }
         }
